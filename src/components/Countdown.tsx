@@ -48,9 +48,9 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
       ].map((item, idx) => (
         <div
           key={idx}
-          className="bg-primary text-white px-6 py-3 rounded-full shadow-md"
+          className="text-white text-shadow-lg p-4 max-w-24 max-h-20 rounded-full shadow-md"
         >
-          <div className="text-3xl font-semibold">{padZero(item.value)}</div>
+          <div className="text-2xl font-medium">{padZero(item.value)}</div>
           <div className="text-sm">{item.label}</div>
         </div>
       ))}
